@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi página web</title>
+    <link rel="icon" href="img/Icono.ico">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <script src="https://kit.fontawesome.com/78d0717806.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    
+    <header> 
+        <nav class="barra">
+            <ul class="ul-header">
+                <li><i class="fa-solid fa-house-chimney"></i><a href="index.html"><b>Inicio</b></a></li>
+                <li><i class="fa-solid fa-user"></i><a href="mi-cuenta.html"><b>Mi cuenta</b></a></li>
+                <li><i class="fa-solid fa-question"></i><a href="ayuda.html"><b>Ayuda</b></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="título">
+    <h3>Galería de Imágenes</h3>
+    </div>
+
+    <!-- Galería de imágenes -->
+
+    <div class="img-fixed"></div>
+
+    <div class="grid-container-galería">
+        <img loading="lazy" src="img/(1).jpg" alt="Fondo">
+        <img loading="lazy" src="img/(2).jpg" alt="Fondo">
+        <img loading="lazy" src="img/(3).jpg" alt="Fondo">
+        <img loading="lazy" src="img/(4).jpg" alt="Fondo">
+        <img loading="lazy" src="img/(5).jpg" alt="Fondo">
+        <img loading="lazy" src="img/(6).jpg" alt="Fondo">
+        <img loading="lazy" src="img/(7).jpg" alt="Fondo">
+        <img loading="lazy" src="img/(8).jpg" alt="Fondo">
+        <img loading="lazy" src="img/(9).jpg" alt="Fondo">
+        <img loading="lazy" src="img/(10).jpg" alt="Fondo">
+        <img loading="lazy" src="img/(11).jpg" alt="Fondo">
+        <img loading="lazy" src="img/(12).jpg" alt="Fondo">
+        <img loading="lazy" src="img/(13).jpg" alt="Fondo">
+        <img loading="lazy" src="img/(14).jpg" alt="Fondo">
+        <img loading="lazy" src="img/(15).jpg" alt="Fondo">
+        <img loading="lazy" src="img/(16).png" alt="Fondo">
+        <img loading="lazy" src="img/(17).png" alt="Fondo">
+        <img loading="lazy" src="img/(18).png" alt="Fondo">
+        <img loading="lazy" src="img/(19).png" alt="Fondo">
+        <img loading="lazy" src="img/(20).png" alt="Fondo">
+        <img loading="lazy" src="img/(21).png" alt="Fondo">
+    </div>
+
+    <div class="img-fixed"></div>
+
+<!--# Nos redirecciona a otra sección de la página por medio de un ID-->
+
+    <button class="button-redes">
+        <a href="#canciones">Ir a la lista de canciones</a>
+    </button>
+
+
+
+<!-- Galería de vídeos -->
+
+    <div class="título">
+        <h3>Galería de Vídeos</h3>
+    </div>
+
+    <div class="vídeo-contenedor">
+        <div>
+            <video src="vídeos/3 Doors Down  Here Without You.mp4" poster="img/1.png" controls=""></video><br>
+            <p>3 Doors Down  Here Without</p>
+        </div> 
+        <div>
+            <video src="vídeos/AURORA  The Seed.mp4" poster="img/2.png" controls=""></video><br>
+            <p>AURORA  The Seed</p>
+        </div> 
+
+        <div>
+            <video src="vídeos/Change In The House Of Flies.mp4" poster="img/3.png" controls=""></video><br>
+            <p>Change In The House Of Flies</p>
+        </div> 
+
+        <div>
+            <video src="vídeos/Fazerdaze  Lucky Girl.mp4" poster="img/4.png" controls=""></video><br>
+            <p>Fazerdaze  Lucky Girl</p>
+        </div> 
+
+        <div>
+            <video src="vídeos/GHOSTEMANE  Nihil.mp4" poster="img/5.png" controls=""></video><br>
+            <p>GHOSTEMANE  Nihil</p>
+        </div> 
+
+        <div>
+            <video src="vídeos/Gorillaz  Tomorrow Comes Today.mp4" poster="img/6.png" controls=""></video><br>
+            <p>Gorillaz  Tomorrow Comes Today</p>
+        </div> 
+
+        <div>
+            <video src="vídeos/Lifehouse  Somewhere In Between.mp4" poster="img/7.png" controls=""></video><br>
+            <p>Lifehouse  Somewhere In Between</p>
+        </div> 
+
+        <div>
+            <video src="vídeos/Lifehouse  Take Me Away.mp4" poster="img/8.png" controls=""></video><br>
+            <p>Lifehouse  Take Me Away</p>
+        </div> 
+
+        <div>
+            <video src="vídeos/Marshmello  FLY .mp4" controls=""></video><br>
+            <p>Marshmello  FLY</p>
+        </div> 
+
+        <div>
+            <video src="vídeos/MEDUZA Lose Control.mp4" poster="img/10.png" controls=""></video><br>
+            <p>MEDUZA Becky Lose Control</p>
+        </div>
+    </div>
+
+
+<!--     Lista de canciones     -->
+
+    <div  id="canciones">
+        <h3 class="título"><b>Lista de canciones</b> </h3>
+    </div>
+
+    <div class="grid-canciones">
+        <div>
+            <p><b>Vermilion parte 2</b></p>
+            <audio src="audios/Vermilion-Pt2.mp3" controls=""></audio>
+         </div>
+        <div>
+            <p><b>Hisohkah  school rooftop</b></p>
+            <audio src="audios/hisohkah  school rooftop.mp3" controls=""></audio>
+        </div>
+        <div>
+            <p><b>Vacations  Young</b></p>
+            <audio src="audios/Vacations  Young.mp3" controls=""></audio>
+        </div>
+        <div>
+            <p><b>MrKitty  After Dark</b></p>
+            <audio src="audios/MrKitty  After Dark.mp3.webm" controls=""></audio>
+        </div>
+         <div>
+            <p><b>Alejandro Sanz  Una Noche con The Corrs</b></p>
+            <audio src="audios/Alejandro Sanz  Una Noche con The Corrs.mp3" controls=""></audio>
+        </div>
+        <div>
+            <p><b>Café Tacvba  Quiero Ver</b></p>
+            <audio src="audios/Café Tacvba  Quiero Ver.mp3" controls=""></audio>
+        </div>
+    </div>
+
+<!-- Inserta imagenes en targetas -->
+    <div class="targetas">
+
+        <h1 class="title">Targetas con efecto hover - Magtimus</h1>
+        
+        <div class="container">
+           
+            <div class="card">
+                <img src="img/img1.jpg">
+                <h4>Naturaleza</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, <br> excepturi unde?</p>
+                <a href="#">Leer más</a> <!-- br rellena la linea-->
+            </div>
+            
+            <div class="card">
+                <img src="img/img2.jpg">
+                <h4>Comida</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, excepturi unde?</p>
+                <a href="#">Leer más</a>
+            </div>
+            
+            <div class="card">
+                <img src="img/img3.jpg">
+                <h4>Tecnología</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, excepturi unde?</p>
+                <a href="#">Leer más</a>
+            </div>
+    
+          </div>
+    
+    </div>
+    
+    <!-- Crea un formulario -->
+    <form class="form-inputs"> 
+        <input type="text" value="Nombre" class="input-text">
+        <input type="password" placeholder="Contraseña" required>
+        <input type="number" placeholder="Número">
+        <input type="email" placeholder="Introduzca su email" required>
+        <input type="color">
+        <input type="range" min="1" max="10">
+        <input type="date">
+        <input type="time">
+        <textarea class="textarea" placeholder="Texto" cols="20" rows="1"></textarea>
+        <input type="button" value="Boton">
+        <input type="file" class="input-file">
+        <input type="submit">
+    </form>
+
+    <!-- ol Lista ordenada -->
+    <ol class="ol-productos">  
+        <li> Primer producto </li>
+        <li> Segundo producto </li>
+        <li> Tercer producto </li>
+    </ol>
+
+    <!-- ul Lista desordenada -->
+    <ul selección="atributo">  
+        <li> Primer producto </li>
+        <li> Segundo producto </li>
+        <li> Tercer producto </li>
+    </ul>
+
+    <!-- Pie de página -->
+    <footer>
+        <h5>  Mis redes sociales </h5>
+        <div class="redes">
+           <a href="https://www.instagram.com/?hl=es-la" target="_blank">Instagram</a>
+           <a href="https://es-la.facebook.com/login/" target="_blank">Facebook</a> 
+           <a href="https://www.tiktok.com/es/" target="_blank">Tik Tok</a> 
+        </div>
+    </footer>
+
+<script src="js/codigo.js"></script>
+<body>
+</html>

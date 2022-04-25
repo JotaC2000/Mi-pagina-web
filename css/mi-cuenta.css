@@ -1,0 +1,303 @@
+body {
+  padding-top: 100px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23540606' fill-opacity='0.1'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+}
+
+
+/* Barra de navegación */
+
+.nav-1 {
+    font-size: 17px;
+    font-family: 'Frijole', cursive;
+    line-height: 1.5; /* Cambia el tamaño de la selección*/
+    font-weight: 200; /* El grososr de la letra*/
+    background-color: rgb(108, 119, 170);
+
+    /*width y heigth cambian el tamaño de las cajas*/
+    width: 100%;  /* (derecha e izquierda) */ 
+    height: 70px;  /*(arriba y abajo) */
+
+  /*Padding es la distancia entre la caja y el texto*/
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  /*o padding: 10px 20px 30px 40px; 
+  10 top, 20 a rigth, 30 a bottom, 40 a left*/
+
+   text-align: center; /*centra el texto de la caja*/
+   
+   text-shadow: 0px 0px 10px rgb(252, 248, 248);
+  
+   margin-top: -100px; /*Centra la caja (div)*/
+   
+   position: fixed; /* Fija la posición de este div*/
+
+   z-index: 1;
+   
+}
+
+.ul-header li { 
+  margin: 10px 10px;
+  display: inline; /*Cambia el comportamineto de las cajas (de bloque a line)*/
+ }
+ 
+ .ul-header li i {
+   margin: 10px 10px;
+ }
+ 
+ .ul-header li a {
+   color: black;
+   text-decoration: none; /* Elimina el subrayado del enlace*/
+ }
+ 
+ 
+ .ul-header li:hover > i { /* Cambia al pasar el ratón por arriba de i*/
+ color: rgb(255, 255, 255);
+ text-shadow: 0px 0px 5px rgb(0, 0, 0);
+ }
+ 
+ .ul-header :hover > a { /* Cambia al pasar el ratón por arriba de a*/
+   color: rgb(255, 255, 255);
+   text-shadow: 0px 0px 10px rgb(0, 0, 0);
+ }
+/* --------------------------------------------- */
+
+/* GRID */
+
+.container-grid {
+  background: radial-gradient(circle,#fff,rgb(90, 86, 86));
+  padding: 10px;
+
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(70px, 1fr));
+  grid-template-rows: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+  grid-auto-columns: 1fr;
+  border: 3px solid #000;
+  background-color: #333;
+  grid-auto-flow: dense;
+  justify-content: space-evenly; /* ( Centra el contenido ) */
+  align-content: space-evenly;  /* ( Centra el contenido ) */
+  height: 600px;
+  justify-items: center;
+  align-items: center;
+  
+}
+
+.grid-item {
+  border: 5px solid #000;
+  background-color: #999;
+  font-size: 30px;
+  padding: 50px
+}
+
+.grid-item:first-child {
+  align-self: start;
+  justify-self: start;
+  background: red;
+}
+
+.grid-item:nth-child(3) {
+  align-self: start;
+  justify-self: end;
+  background: red;
+}
+
+.grid-item:nth-child(4) {
+  justify-self: end;
+}
+
+.grid-item:nth-child(5) {
+  background: lightgreen;
+}
+
+.grid-item:nth-child(6) {
+  justify-self: start;
+}
+
+.grid-item:nth-child(7) {
+  align-self: end;
+  justify-self: start;
+/* Tambien podria usar place-self: end start; */
+  background: red;
+}
+
+.grid-item:last-child{
+  align-self: end;     
+  justify-self: end;
+  /* Tambien podria usar place-self: end; */
+  background: red;
+}
+
+/*........... Transiciones...........*/
+
+.transition-container {
+  background: rgb(111, 71, 254);
+  padding: 15px;
+}
+
+.caja {
+  background: #025;
+  height: 40px;
+  width: 40px;
+  border-radius: 100px;
+  transition-property: left, background;
+  transition-duration: 1s, 1s;
+  margin: 20px;
+  position: relative;
+  left: 0;
+}
+
+.transition-container:hover > .caja {
+  left: 90%;
+  background: rgb(160, 181, 255);
+}
+
+.caja:first-child {
+  transition-timing-function: linear;
+}
+
+.caja:nth-child(2) {
+  transition-timing-function: ease;
+}
+
+.caja:nth-child(3) {
+  transition-timing-function: ease-in;
+}
+
+.caja:nth-child(4) {
+  transition-timing-function: ease-out;
+}
+
+.caja:nth-child(5) {
+  transition-timing-function: ease-in-out;
+}
+
+/* ...... Animaciones ....... */
+
+.container-animation {
+  padding: 10px 5px;
+  background: rgb(133, 174, 236);
+}
+
+.caja-animation {
+  background: #025;
+  height: 70px;
+  width: 70px;
+  margin: 10px;
+  animation-name: desplazarse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  position: relative;
+  animation-timing-function: cubic-bezier(0,-0.02,.99,.99);
+}
+
+@keyframes desplazarse {
+  0% {
+        left: 0;
+        background: #025;
+  }
+
+  50% {
+    background: green;
+  }
+
+  100% {
+        left: 90%;
+        background: red;
+
+  }
+}
+
+/* ...... Transformación ....... */
+
+.container-transformación {
+  height: 300px;
+  width: 300px;
+  padding: 20px 5px;
+  background: #025;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  display: flex;
+  margin: 0 300px 0 300px;
+}
+
+.caja-transformación {
+  background: rgb(133, 11, 107);
+  height: 150px;
+  width: 150px;
+  margin: 20px;
+  
+  color: rgb(255, 255, 255);
+  transition: transform 1s;
+}
+
+.container-transformación:hover {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.caja-transformación:hover {
+  transform: translate(10px);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+/* ...... Boton ....... */
+
+.button {
+  --glow-color: rgb(217, 176, 255);
+  --glow-spread-color: rgba(191, 123, 255, 0.781);
+  --enhanced-glow-color: rgb(231, 206, 255);
+  --btn-color: rgb(100, 61, 136);
+  border: .25em solid var(--glow-color);
+  padding: 1em 3em;
+  color: var(--glow-color);
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 1em .25em var(--glow-color),
+         0 0 4em 1em var(--glow-spread-color),
+         inset 0 0 .75em .25em var(--glow-color);
+  text-shadow: 0 0 .5em var(--glow-color);
+  position: relative;
+  transition: all 0.3s;
+  margin: 40px;
+ }
+ 
+ .button::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--glow-spread-color);
+  filter: blur(2em);
+  opacity: .7;
+  transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+ }
+ 
+ .button:hover {
+  color: var(--btn-color);
+  background-color: var(--glow-color);
+  box-shadow: 0 0 1em .25em var(--glow-color),
+         0 0 4em 2em var(--glow-spread-color),
+         inset 0 0 .75em .25em var(--glow-color);
+ }
+ 
+ .button:active {
+  box-shadow: 0 0 0.6em .25em var(--glow-color),
+         0 0 2.5em 2em var(--glow-spread-color),
+         inset 0 0 .5em .25em var(--glow-color);
+ }
+
+
+

@@ -1,0 +1,53 @@
+/*
+{
+    color: rgb(0, 0, 0);
+}  propiedad universal ( selecciona todo )
+*/
+
+/* 
+h1,h4 {
+    color: brown;
+} seleccion por tipo y varios al mismo tiempo
+*/
+
+/*
+.ol-productos {
+    color: crimson;
+} selección por clases
+*/
+
+/*
+#Element {
+    color: rgb(66, 13, 165);
+} Seleccion por ID
+*/
+
+/*
+[selección="atributo"] {
+    color: darkgreen;
+} selección por atributo
+*/
+
+/* 
+p b {
+    color: deeppink;
+} selecciçon por desendencia (selecciona el p que esta dentro del b)
+*/
+
+/*
+h1:hover {
+    color: gold;
+} seleccón por pseudo clase
+*/
+
+/* 
+"Especificidad"
+ Selecciona sugún el rango:
+ 0. Important 
+ 1. Estilos en línea
+ 2. Identificadores
+ 3. Clases
+ 4. Pseudo clases
+ 5. Atributos
+ 6. Elementos
+ 7. Pseudo elementos
